@@ -1,6 +1,6 @@
 import pygame
 
-class Piece extends pygame.sprite.Sprite: 
+class Piece (pygame.sprite.Sprite): 
 	def __init__(self):
 		self.highlight == False
 	
