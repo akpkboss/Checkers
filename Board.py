@@ -1,6 +1,8 @@
 import pygame
+
 #create a method in main to ensure that no more than one piece is highlighted 
 #add in a check if jumped feature somewhere else
+
 class Board:
     def __init__ ( self, screen ):
             self.board = list()
@@ -20,12 +22,12 @@ class Board:
             redRow.append ( ( 128, 0, 0 ) )
 
     for i in range ( 4 ):
-		self.board.append ( blackRow )
-		self.board.append ( redRow )
+	    self.board.append (blackRow)
+	    self.board.append (redRow)
 
    def drawBoard ( self ):
-		x = 0
-		y = 0
+	x = 0
+	y = 0
 
     for row in self.board:
         for square in row:
@@ -71,18 +73,6 @@ raw_input()
 pygame.quit()
 
 
-class Piece extends sprite: 
-	def __init__(self):
-		self.highlight == False
-	
-	def highlighted(self):
-		if (pygame.mouse.get_pressed == True and self.highlight == False):
-			self.highlight == True
-		elif(pygame.mouse.get_pressed == True and self.highlight == True):
-			self.highlight == False
-
-	def checkMove(self):
-		#decide how you want this to happen mayhaps put it in the main
 
 	
 #sprite = pygame.image.load('#blahblah.png')
