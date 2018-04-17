@@ -2,6 +2,7 @@ import pygame
 
 class Piece (pygame.sprite.Sprite): 
 	def __init__(self):
+		pygame.sprite.Sprite.__init__(self)
 		self.highlight == False
 	
 	def highlighted(self):
